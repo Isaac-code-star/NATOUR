@@ -19,6 +19,7 @@ body {
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  margin-bottom: 6rem;
 }
 
 .heading-main {
@@ -193,12 +194,13 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 1rem 3rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -257,6 +259,69 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #28b485;
   padding: 3px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.text-btn:hover {
+  background-color: #28b485;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.text-btn:active {
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__picture {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline-offset: 2rem;
+}
+
+.composition__picture--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__picture--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition__picture--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.composition__picture:hover {
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  outline: 1.5rem solid #28b485;
+}
+
+.composition:hover .composition__picture:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .header {
