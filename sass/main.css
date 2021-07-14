@@ -279,6 +279,25 @@ body {
           transform: translateY(0);
 }
 
+.card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+
+.card__side {
+  background-color: orange;
+  height: 50rem;
+  color: #fff;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.card:hover .card__side {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 .composition {
   position: relative;
 }
@@ -449,6 +468,12 @@ body {
 .features > * {
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
+}
+
+.tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
 }
 
 /*
