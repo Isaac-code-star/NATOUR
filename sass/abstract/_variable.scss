@@ -4,6 +4,12 @@ $color-medium-green: #55c57a;
 $color-dark-green: #28b485;
 $color-grey-light-1: #f7f7f7;
 
+$color-light-orange: #ffb900;
+$color-dark-orange: #ff7730;
+
+$color-light-blue: #2998ff;
+$color-dark-blue: #5643fa;
+ 
 $color-primary-gray: #777;
 $color-primary-white: #fff;
  $color-black: #000;
@@ -15,3 +21,6 @@ $color-primary-white: #fff;
 
  //fonts-size
 $default-font-size:1.6rem;
+
+//box-shadow
+$default-box-shadow: 0 1.5rem 4rem 0 rgba($color-black, .15);
