@@ -33,7 +33,16 @@
         &::after{
             background-color: $color-primary-white;
         }
-    }
+    }   
+
+    &--green{
+        background-color: $color-dark-green;
+        color: $color-primary-white;
+
+        &::after{
+            background-color: $color-light-green;
+        }
+    }   
     
     
     
@@ -48,7 +57,7 @@
         left: 0;
         z-index: -1;
         transition: all .4s;
-    } 
+        } 
     
     
 
