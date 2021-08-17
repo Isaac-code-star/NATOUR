@@ -1,4 +1,5 @@
 .btn{
+    &,
     &:link,
     &:visited{
         text-transform: uppercase;
@@ -9,6 +10,12 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+
+        //changes to <button> in the form element
+        border: none;
+        
+
+       
     }
 
     &:hover{
@@ -38,6 +45,7 @@
     &--green{
         background-color: $color-dark-green;
         color: $color-primary-white;
+      
 
         &::after{
             background-color: $color-light-green;
